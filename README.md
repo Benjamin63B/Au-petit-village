@@ -6,7 +6,7 @@ Ce projet a été généré avec [Angular CLI](https://github.com/angular/angula
 
 Exécutez `ng serve` pour un serveur de développement. Accédez à « http://localhost:4200/ ». L'application se rechargera automatiquement si vous modifiez l'un des fichiers source.
 
-## ÉGénérer des composants
+## Générer des composants
 
 Exécutez `ng generate composant nom-du-composant` pour générer un nouveau composant. Vous pouvez également utiliser `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
