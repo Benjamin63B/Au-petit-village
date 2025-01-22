@@ -1,27 +1,27 @@
-# AuPetitVillageAngular
+# Au Petit Village - Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.4.
+Ce projet a été généré avec [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4 et tailwindCSS.
 
-## Development server
+## Serveur de développement
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Exécutez `ng serve` pour un serveur de développement. Accédez à « http://localhost:4200/ ». L'application se rechargera automatiquement si vous modifiez l'un des fichiers source.
 
-## Code scaffolding
+## ÉGénérer des composants
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Exécutez `ng generate composant nom-du-composant` pour générer un nouveau composant. Vous pouvez également utiliser `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Construire
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Exécutez `ng build` pour construire le projet. Les artefacts de construction seront stockés dans le répertoire `dist/`.
 
-## Running unit tests
+## Exécution de tests unitaires
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Exécutez `ng test` pour exécuter les tests unitaires via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Exécuter des tests de bout en bout
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Exécutez `ng e2e` pour exécuter les tests de bout en bout via une plateforme de votre choix. Pour utiliser cette commande, vous devez d'abord ajouter un package qui implémente des fonctionnalités de test de bout en bout.
 
-## Further help
+## Aide supplémentaire
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Pour obtenir plus d'aide sur la CLI angulaire, utilisez `ng help` ou consultez la page [Présentation de la CLI angulaire et référence des commandes](https://angular.dev/tools/cli).
