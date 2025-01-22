@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "name": "Obélix",
+        "description": "Plongez dans l'univers d'Astérix avec cette figurine en résine de 21 cm représentant Obélix sur une pile d'albums. Un incontournable pour les fans de l'irréductible Gaulois, mêlant nostalgie et authenticité !",
+        "url": "../../assets/images-products/obelix.jpg",
+        "dimensions": "14 x 13 x 26,5 cm",
+        "price": "19,99 €"
+    },
+    {
+        "id": 2,
+        "name": "Astérix",
+        "description": "Cette figurine d'Astérix en résine de 18 cm capture l'esprit courageux et intrépide de notre héros préféré. Un excellent ajout à toute collection ou une belle idée cadeau pour les amateurs d'Astérix !",
+        "url": "../../assets/images-products/asterix.jpg",
+        "dimensions": "20 cm",
+        "price": "14,99 €"
+    },
+    {
+        "id": 3,
+        "name": "Panoramix",
+        "description": "Découvrez Panoramix, le druide légendaire d'Astérix et Obélix, dans une superbe figurine en résine de 17 cm. Parfaite pour ajouter une touche de magie à votre collection !",
+        "url": "../../assets/images-products/panoramix.jpg",
+        "dimensions": "16 cm",
+        "price": "15,99 €"
+    },
+    {
+        "id": 4,
+        "name": "Obélix, Astérix & Panoramix",
+        "description": "Une figurine unique réunissant Obélix, Astérix et Panoramix ! Avec des dimensions impressionnantes de 18 x 18 x 17 cm, elle est idéale pour les fans de l'univers gaulois souhaitant une pièce centrale dans leur collection.",
+        "url": "../../assets/images-products/asterix-obelix-panoramix.jpg",
+        "dimensions": "5.5 cm",
+        "price": "48,99 €"
+    }
+]

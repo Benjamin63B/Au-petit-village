@@ -1,0 +1,85 @@
+/* Conteneur principal */
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #FDD90B; /* Jaune vif pour le fond */
+    padding: 25px;
+    border-radius: 8px; /* Coins arrondis plus doux */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Ombre plus visible */
+    font-family: 'Bubbleboddy neue', sans-serif; /* Police principale */
+}
+
+/* Titre */
+h2 {
+    text-align: center;
+    color: #151217; /* Texte sombre */
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    font-family: 'Comfortaa', sans-serif; /* Titre avec une police secondaire */
+}
+
+/* Formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacement entre les champs */
+    font-family: 'Comfortaa', sans-serif; /* Police du formulaire */
+}
+
+/* Groupes de champs */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #151217;
+    font-family: 'Bubbleboddy neue', sans-serif; /* Police pour les labels */
+}
+
+/* Champs de saisie */
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); /* Ombre interne subtile */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Comfortaa', sans-serif; /* Police uniforme */
+}
+
+/* Effet au focus sur les champs */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #DA001E; /* Rouge vif pour indiquer le focus */
+    box-shadow: 0 0 6px rgba(218, 0, 30, 0.4); /* Éclat subtil */
+    outline: none;
+}
+
+/* Bouton d'envoi */
+input[type="submit"] {
+    background-color: #151217; /* Rouge vif */
+    color: #fff; /* Texte blanc */
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Bubbleboddy neue', sans-serif; /* Police spécifique pour le bouton */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Effet au survol du bouton */
+input[type="submit"]:hover {
+    background-color: #DA001E; /* Rouge foncé */
+    transform: scale(1.02); /* Légère mise en avant */
+}

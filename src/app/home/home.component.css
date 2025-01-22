@@ -1,0 +1,166 @@
+.container {
+    margin: 0 10%;
+}
+
+section {
+    margin-top: 5%;
+}
+
+/* Boutons */
+.bouton {
+    background-color: #151217; /* Fond sombre */
+    color: #FDD90B; /* Texte jaune vif */
+    font-size: 1em;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px; /* Coins légèrement arrondis */
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ombre douce */
+}
+
+.bouton:hover {
+    background-color: #DA001E; /* Fond rouge vif au survol */
+    color: #ecf0f1; /* Texte clair */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Accentuation de l'ombre */
+}
+
+/* Figurines */
+.product-row {
+    display: flex;
+    flex-wrap: wrap; /* Permet de passer à la ligne automatiquement */
+    justify-content: center; /* Centrage horizontal des produits */
+    gap: 15px; /* Espacement uniforme entre les produits */
+    margin-top: 20px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrage du contenu à l'intérieur des blocs */
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(218, 0, 30, 0.5); /* Ombre discrète */
+    width: calc(50% - 20px); /* Deux produits par ligne avec espacement */
+    max-width: 300px; /* Limite pour éviter des blocs trop larges */
+    background-color: #fdfdfd;
+    border-radius: 8px; /* Coins légèrement arrondis */
+    transition: box-shadow 0.3s ease;
+}
+
+.product:hover {
+    box-shadow: 0 6px 15px rgba(21, 18, 23, 0.7); /* Ombre plus visible au survol */
+}
+
+.product img {
+    display: block;
+    width: 100%; /* L'image occupe toute la largeur de son conteneur */
+    max-height: 180px; /* Hauteur maximale pour uniformiser les images */
+    object-fit: contain; /* Préserve les proportions de l'image */
+    margin-bottom: 10px;
+    border-radius: 6px; /* Coins arrondis pour les images */
+    box-shadow: 0 3px 8px rgba(21, 18, 23, 0.5); /* Ombre discrète pour les images */
+}
+
+/* Responsive pour les petits écrans */
+@media (max-width: 768px) {
+    .container {
+        margin: 0 5%; /* Réduction des marges sur mobile */
+    }
+
+    .product-row {
+        gap: 10px; /* Réduction de l'espacement entre les produits */
+    }
+
+    .product {
+        width: calc(100% - 20px); /* Un produit par ligne sur mobile */
+    }
+
+    .product img {
+        max-height: 150px; /* Réduction de la hauteur maximale des images */
+    }
+
+    .bouton {
+        font-size: 0.9em; /* Taille réduite du texte */
+        padding: 10px 15px; /* Taille plus compacte */
+    }
+
+    .options {
+        flex-direction: column; /* Alignement vertical sur mobile */
+        align-items: flex-start; /* Alignement à gauche */
+        gap: 15px; /* Espacement réduit entre les sections */
+    }
+
+    .sort-options {
+        width: 100%; /* Occupe toute la largeur sur mobile */
+        justify-content: flex-start; /* Alignement à gauche */
+    }
+
+    .search-options {
+        width: 100%; /* Occupe toute la largeur sur mobile */
+        justify-content: flex-start; /* Alignement à gauche */
+    }
+
+    .search-options input {
+        width: 100%; /* Champ de recherche large sur mobile */
+    }
+
+    .search-options button {
+        width: auto; /* Taille ajustée du bouton */
+    }
+}
+
+/* Partie de tri et de recherche */
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px; /* Espacement entre les options de tri et de recherche */
+    flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
+}
+
+.sort-options {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacement entre les radios et les étiquettes */
+}
+
+.sort-options label {
+    font-size: 1em;
+    color: #151217;
+}
+
+.search-options {
+    display: flex;
+    gap: 10px; /* Espacement entre le champ de recherche et le bouton */
+    align-items: center;
+    flex-wrap: wrap; /* Permet de passer à la ligne sur les petits écrans */
+}
+
+.search-options input {
+    padding: 10px;
+    border: 1px solid #DA001E; /* Bordure rouge pour contraste */
+    border-radius: 5px;
+    width: 200px; /* Largeur du champ de recherche */
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 1em;
+}
+
+.search-options button {
+    background-color: #FDD90B;
+    border: none;
+    border-radius: 8px;
+    color: #151217;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.search-options button:hover {
+    background-color: #DA001E;
+    color: #ecf0f1;
+}

@@ -1,0 +1,19 @@
+div {
+    margin: 5% 10%; /* Espacement autour du contenu */
+    padding: 20px; /* Ajout d'un espacement interne */
+    background-color: #fdfdfd; /* Fond clair pour mettre en valeur le contenu */
+    border-radius: 8px; /* Coins légèrement arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre douce pour une apparence moderne */
+    line-height: 1.6; /* Améliore la lisibilité du texte */
+    font-size: 1em; /* Taille de texte par défaut */
+    color: #151217; /* Couleur du texte pour un bon contraste */
+}
+
+/* Responsive pour petits écrans */
+@media (max-width: 768px) {
+    div {
+        margin: 5% 5%; /* Réduction des marges latérales sur mobile */
+        padding: 15px; /* Espacement interne ajusté */
+        font-size: 0.9em; /* Taille de texte légèrement réduite */
+    }
+}

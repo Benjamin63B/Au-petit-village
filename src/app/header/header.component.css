@@ -1,0 +1,94 @@
+header {
+    background-color: #FDD90B; /* Jaune vif pour le fond du header */
+    color: #151217; /* Texte sombre pour un bon contraste */
+    padding: 15px 10%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Permet de passer les éléments sur plusieurs lignes si nécessaire */
+}
+
+.logo { 
+    width: 80px; /* Réduction de la taille sur mobile */
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #F9D0A3; /* Reflet réduit */
+}
+
+/* NAVBAR */
+nav {
+    flex-grow: 1; /* La navbar occupe tout l'espace restant */
+    text-align: right; /* Alignement à droite */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 10px; /* Espacement entre les éléments */
+    flex-wrap: wrap; /* Les éléments passent à la ligne si nécessaire */
+    justify-content: flex-end;
+}
+
+nav li {
+    background-color: #DA001E; /* Fond rouge pour chaque élément de liste */
+    border-radius: 5px; /* Coins arrondis pour un style bouton */
+    padding: 5px 10px; /* Espacement interne pour un effet bouton */
+    transition: background-color 0.3s ease;
+}
+
+nav li:hover {
+    background-color: #151217; /* Fond sombre au survol */
+}
+
+nav li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.11em;
+    color: #ecf0f1; /* Texte blanc cassé pour le contraste */
+    font-size: 1em; /* Taille de texte adaptée aux petits écrans */
+    display: block; /* Permet au lien de remplir tout l'élément */
+    transition: color 0.3s ease;
+}
+
+nav li a:hover {
+    color: #FDD90B; /* Texte jaune vif au survol */
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 5%;
+    }
+
+    .container {
+        flex-direction: column; /* Les éléments s'alignent en colonne */
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 10px; /* Espacement sous le logo */
+    }
+
+    nav ul {
+        justify-content: center; /* La navbar est centrée sur mobile */
+        gap: 5px; /* Réduction de l'espacement entre les éléments */
+    }
+
+    nav li {
+        width: 100%; /* Les éléments occupent toute la largeur */
+        text-align: center; /* Texte centré */
+    }
+
+    nav li a {
+        font-size: 0.9em; /* Réduction de la taille du texte */
+        padding: 10px; /* Augmentation du padding pour une meilleure zone cliquable */
+    }
+}

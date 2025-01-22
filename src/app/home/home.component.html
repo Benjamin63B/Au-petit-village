@@ -1,0 +1,54 @@
+<div class="container">
+    <section>
+        <h1>Bienvenue Au Petit Village</h1>
+        <p>
+            Nous sommes spécialisés dans la confection de figurines faites main, inspirées de l'univers 
+            d'Astérix et Obélix. Chaque pièce est réalisée avec soin pour capturer l'esprit des célèbres 
+            Gaulois et raviver la nostalgie des aventures intemporelles. Notre mission est de partager 
+            notre passion avec les amateurs d'art et les collectionneurs, tout en offrant des créations 
+            uniques et authentiques.
+        </p>
+        <a routerLink="/about">
+            <button class="bouton">En savoir plus</button>
+        </a>
+    </section>
+
+    <section>
+        <h2 class="section-title">Nos Figurines</h2>
+    
+        <div class="options">
+            <div class="sort-options">
+                <label>Trier par prix :</label>
+                <input type="radio" name="sortOrder" [(ngModel)]="selectedSortOrder" value="asc" id="asc" />
+                <label for="asc">Croissant</label>
+                <input type="radio" name="sortOrder" [(ngModel)]="selectedSortOrder" value="desc" id="desc" />
+                <label for="desc">Décroissant</label>
+            </div>
+    
+            <div class="search-options">
+                <input 
+                    type="search" 
+                    id="site-search" 
+                    [(ngModel)]="searchTerm" 
+                    (input)="search()" 
+                    placeholder="Rechercher"
+                />
+                <button class="bouton" (click)="search()">Rechercher</button>
+            </div>
+        </div>
+    
+        <div class="product-row">
+            <div class="product" *ngFor="let product of products | sortByPrice:selectedSortOrder | productSearch:searchTerm">
+                <a [routerLink]="['/product', product.id]">
+                    <img [src]="product.url" alt="{{ product.name }}">
+                </a>
+                <div class="product-details">
+                    <h3>{{ product.name }}</h3>
+                    <p><strong>Dimensions :</strong> {{ product.dimensions }}</p>
+                    <p><strong>Prix :</strong> {{ product.price }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</div>

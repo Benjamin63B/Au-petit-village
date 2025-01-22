@@ -1,0 +1,63 @@
+/* Importer Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+/* Définir une police personnalisée pour Bubbleboddy neue */
+@font-face {
+    font-family: 'Bubbleboddy neue';
+    src: url('../src/assets/fonts/bubbleboddyneue-regular trial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Polices pour les titres */
+h1, h2, h3, h4 {
+    font-family: 'Bubbleboddy neue', sans-serif;
+    color: #151217; /* Couleur sombre pour le texte des titres */
+    margin-top: 0; /* Supprimer les marges supplémentaires */
+    text-align: center; /* Centrer les titres par défaut */
+}
+
+/* Styles globaux */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F9D0A3; /* Fond beige clair */
+    font-family: 'Comfortaa', sans-serif; /* Police moderne et arrondie */
+    font-size: 16px; /* Taille de texte par défaut */
+    color: #151217; /* Couleur sombre pour le texte général */
+    line-height: 1.6; /* Amélioration de la lisibilité */
+    overflow-x: hidden; /* Évite les défilements horizontaux indésirables */
+}
+
+/* Paragraphes */
+p {
+    margin-bottom: 20px; /* Espacement entre les paragraphes */
+    text-align: justify; /* Justification du texte pour une meilleure lisibilité */
+}
+
+/* Liens */
+a {
+    color: #DA001E; /* Couleur rouge vif pour les liens */
+    text-decoration: none; /* Supprime les soulignements par défaut */
+    transition: color 0.3s ease; /* Animation fluide pour les changements de couleur */
+}
+
+a:hover {
+    color: #990014; /* Couleur rouge foncé au survol */
+    text-decoration: underline; /* Ajoute un soulignement au survol */
+}
+
+/* Gestion responsive */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Taille de texte légèrement réduite sur mobile */
+    }
+
+    h1, h2, h3, h4 {
+        font-size: 1.5em; /* Ajustement de la taille des titres sur mobile */
+    }
+
+    p {
+        margin-bottom: 15px; /* Réduction de l'espacement entre les paragraphes */
+    }
+}
